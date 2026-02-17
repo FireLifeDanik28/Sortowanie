@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sortowanie
 {
-    internal class InsertSort
+    public class InsertSort
     {
-        static int[] Sort(int[] tablica)
+        public static int[] Sort(int[] tablica)
         {
             int[] tablica2 = new int[tablica.Length];
 
@@ -36,7 +36,7 @@ namespace Sortowanie
             }
             return tablica2;
         }
-        static double[] Sort(double[] tablica)
+        public static double[] Sort(double[] tablica)
         {
             double[] tablica2 = new double[tablica.Length];
 

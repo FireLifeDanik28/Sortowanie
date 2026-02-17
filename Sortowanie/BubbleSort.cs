@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sortowanie
 {
-    internal class BubbleSort
+    public class BubbleSort
     {
-        static int[] Sort(int[] tablica)
+        public static int[] Sort(int[] tablica)
         {
             int temporary;
 
@@ -27,7 +27,7 @@ namespace Sortowanie
             return tablica;
         }
 
-        static double[] Sort(double[] tablica)
+        public static double[] Sort(double[] tablica)
         {
             double temporary;
 
