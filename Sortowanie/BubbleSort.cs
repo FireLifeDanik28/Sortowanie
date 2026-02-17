@@ -26,5 +26,24 @@ namespace Sortowanie
             }
             return tablica;
         }
+
+        static double[] Sort(double[] tablica)
+        {
+            double temporary;
+
+            for (int j = 0; j < tablica.Length - 1; j++)
+            {
+                for (int i = 0; i < tablica.Length - j - 1; i++)
+                {
+                    if (tablica[i] > tablica[i + 1])
+                    {
+                        temporary = tablica[i + 1];
+                        tablica[i + 1] = tablica[i];
+                        tablica[i] = temporary;
+                    }
+                }
+            }
+            return tablica;
+        }
     }
 }

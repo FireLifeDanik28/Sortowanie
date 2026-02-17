@@ -36,5 +36,33 @@ namespace Sortowanie
             }
             return tablica2;
         }
+        static double[] Sort(double[] tablica)
+        {
+            double[] tablica2 = new double[tablica.Length];
+
+            for (int i = 0; i < tablica.Length; i++)
+            {
+                if (i != 0)
+                {
+                    tablica2[i] = tablica[i];
+                    for (int j = i; j > 0; j--)
+                    {
+                        if (tablica2[j - 1] > tablica2[j])
+                        {
+                            double temp = tablica2[j];
+                            tablica2[j] = tablica2[j - 1];
+                            tablica2[j - 1] = temp;
+                        }
+
+                    }
+                }
+                else
+                {
+                    //pierwszy element
+                    tablica2[i] = tablica[i];
+                }
+            }
+            return tablica2;
+        }
     }
 }
