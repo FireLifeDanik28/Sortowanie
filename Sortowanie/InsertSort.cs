@@ -8,7 +8,7 @@ namespace Sortowanie
 {
     internal class InsertSort
     {
-        static void Sort(int[] tablica)
+        static int[] Sort(int[] tablica)
         {
             int[] tablica2 = new int[tablica.Length];
 
@@ -34,15 +34,7 @@ namespace Sortowanie
                     tablica2[i] = tablica[i];
                 }
             }
-            foreach (int n in tablica)
-            {
-                Console.Write($"{n} ");
-            }
-            Console.WriteLine("\n");
-            foreach (int n in tablica2)
-            {
-                Console.Write($"{n} ");
-            }
+            return tablica2;
         }
     }
 }

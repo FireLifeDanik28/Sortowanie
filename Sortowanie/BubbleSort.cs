@@ -8,7 +8,7 @@ namespace Sortowanie
 {
     internal class BubbleSort
     {
-        static void Sort(int[] tablica)
+        static int[] Sort(int[] tablica)
         {
             int temporary;
 
@@ -24,11 +24,7 @@ namespace Sortowanie
                     }
                 }
             }
-
-            foreach (int n in tablica)
-            {
-                Console.Write($"{n} ");
-            }
+            return tablica;
         }
     }
 }
